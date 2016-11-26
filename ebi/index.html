@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reponsive HTML Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet">
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="main__header">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation"> 
+
+
+      <div class="navbar-header">
+        <h1 class="navbar-brand"><a href="index.html">ebi</a></h1>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav nav-justified">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="full_width.html">about us</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </nav>
+  </div>
+</header>
+<section class="slider">
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item"> <img data-src="images/slider/image02.jpg" alt="First slide" src="images/slider/image02.jpg">
+        <div class="container">
+          <div class="carousel-caption">
+            <p><a class="btn btn-default btn-lg" href="#" role="button">MALE</a><a class="btn btn-default btn-lg" href="#" role="button">FEMALE</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item active"> <img data-src="images/slider/image01.jpg" alt="Second slide" src="images/slider/image01.jpg">
+        <div class="container">
+          <div class="carousel-caption">
+
+            <p><a class="btn btn-default btn-lg" href="#" role="button">MALE</a><a class="btn btn-default btn-lg" href="#" role="button">FEMALE</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon carousel-control-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon carousel-control-right"></span></a> </div>
+</section>
+<!--end of slider section-->
+<section class="main__middle__container">
+  <div class="container">
+    <div class="row with__sep">
+      <h3 class="text-center">Phasellus ultrices nulla quis nibh. Quisque a lectus. Lorem ipsum dolor sit amet ...</h3>
+      <p class="text-center big-paragraph">Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+    </div>
+
+</div></section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$('.carousel').carousel({
+  interval: 3500, // in milliseconds
+  pause: 'none' // set to 'true' to pause slider on mouse hover
+})
+
+</script>
+</body>
+</html>
