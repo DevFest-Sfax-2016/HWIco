@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">     <!--language en, fr-->
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'firstapp/css/questionnaire.css' %}"/>
+	<script src="{% static 'firstapp/js/jquery.min.js' %}"></script>
+        <script src="{% static 'firstapp/js/questionnaire.js' %}"></script>
+</head>
+<BODY BACKGROUND-color = black> </BODY>
+<body>
+    <div class="quizContainer">
+         <h1>HELLO !! REPONDEZ AUX QUESTIONS SVP</h1>
+
+        <div class="question"></div>
+        <ul class="choiceList"></ul>
+        <div class="quizMessage"></div>
+        <div class="result"></div>
+        <div class="nextButton">Next Question</div>
+        <br>
+    </div>
+</body>
+</html>

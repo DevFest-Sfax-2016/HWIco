@@ -1,0 +1,83 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>about us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="{% static 'firstapp/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="{% static 'firstapp/css/style.css' %}" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="main__header">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+
+
+            <div class="navbar-header"><br>
+                <h1 class="navbar-brand"><a href="index.html"><h5><br><br><br><strong>MAKTOUB</strong></h5></a></h1>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="{% url 'about_us' %}">about us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+<section class="slider">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item"> <img data-src="{% static 'firstapp/images/slider/image02.jpg' %}" alt="First slide" src="{% static 'firstapp/images/slider/image02.jpg' %}">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p><a class="btn btn-default btn-lg" href="#" role="button">MALE</a><a class="btn btn-default btn-lg" href="#" role="button">FEMALE</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active"> <img data-src="{% static 'firstapp/images/slider/image01.jpg' %}" alt="Second slide" src="{% static 'firstapp/images/slider/image01.jpg' %}">
+                <div class="container">
+                    <div class="carousel-caption">
+
+                        <p><a class="btn btn-default btn-lg" href="#" role="button">MALE</a><a class="btn btn-default btn-lg" href="#" role="button">FEMALE</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon carousel-control-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon carousel-control-right"></span></a> </div>
+</section>
+<!--end of slider section-->
+<section class="main__middle__container">
+    <div class="container">
+        <div class="row with__sep">
+            <h3 class="text-center">Connect instantly with beautiful men and women in your local area and from around the world ...</h3>
+            <p class="text-center big-paragraph">A dating site where existing members hold the key to the door</p>
+        </div>
+
+    </div></section>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="{% static 'firstapp/js/jquery.min.js' %}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'firstapp/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript">
+
+    $('.carousel').carousel({
+        interval: 3500, // in milliseconds
+        pause: 'none' // set to 'true' to pause slider on mouse hover
+    })
+
+</script>
+</body>
+</html>
